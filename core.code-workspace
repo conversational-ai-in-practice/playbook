@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../core"
+		},
+		{
+			"path": "."
+		}
+	],
+  "settings": {
+    "eslint.alwaysShowStatus": true,
+    "workbench.editor.showTabs": true
+  }
+}
