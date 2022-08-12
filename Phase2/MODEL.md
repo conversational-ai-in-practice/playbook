@@ -35,6 +35,6 @@ Stick
 # Close Friend
 ## Intents
 ### WellBeing
-How are you?
-How are you doing?
-How's it going?
+How are you?  
+How are you doing?  
+How's it going?  
