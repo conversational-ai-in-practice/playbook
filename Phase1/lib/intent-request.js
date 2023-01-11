@@ -1,12 +1,12 @@
 class IntentRequest {
   /**
-   * @param {string} intentName 
-   * @param {Object<string, string>} entities
+   * @param {string} intent 
+   * @param {Object<string, string>} [entities]
    */
   constructor(intent, entities) {
     this.intentName = intent
-    this.entities = entities
+    this.entities = entities || {}
   }
 }
 
-module.exports = IntentRequest
+export default IntentRequest

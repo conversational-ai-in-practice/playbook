@@ -1,4 +1,5 @@
-import Action from './action'
+import Action from './action.js'
+import IntentRequest from '../intent-request.js'
 
 class WellBeingAction extends Action {
   /**
@@ -12,3 +13,5 @@ class WellBeingAction extends Action {
   }
 
 }
+
+export default WellBeingAction

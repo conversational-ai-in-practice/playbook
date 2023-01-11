@@ -1,4 +1,5 @@
-import IntentRequest from "../intent-request"
+import IntentRequest from "../intent-request.js"
+
 class Action {
   /**
    * Top-level interface to handle fulfillment actions
@@ -13,4 +14,4 @@ class Action {
   }
 }
 
-module.exports = Action
+export default Action
