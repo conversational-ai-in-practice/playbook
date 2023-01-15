@@ -1,5 +1,8 @@
-import IntentRequest from "../intent-request.js"
+import IntentRequest from '../helper/intent.js'
 
+/**
+ *
+ */
 class Action {
   /**
    * Top-level interface to handle fulfillment actions
@@ -7,10 +10,10 @@ class Action {
    * Replies with a string response
    * @abstract
    * @param {IntentRequest} request
-   * @returns {Promise<string>} 
+   * @returns {Promise<string>}
    */
-  async handle(request) {
-    return ''
+  async handle (request) {
+    throw new Error('Must be implemented')
   }
 }
 
