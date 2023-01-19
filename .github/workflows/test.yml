@@ -1,0 +1,29 @@
+name: unit-test
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - '**.js'
+    tags-ignore:
+      - '**'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Install Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16.x
+    
+    - name: Install Dependencies
+      run: npx pnpm install
+      
+    - name: Unit Test
+      run: pnpm run unit

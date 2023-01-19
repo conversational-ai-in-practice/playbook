@@ -14,10 +14,15 @@ Once completed, return to the Dialogflow Console and select the new project. Cho
 * Click "Create"
 
 ### Import the agent
-* Click the "Agent Settings" on the top-right of the Dialogflow CX console
-* 
+* Return to the agent list by clicking on the main menu on the top-left, and selecting "Dialogflow CX"
+* Right-click on the three dots to the right of the agent you just created
+* Select "Restore agent"
+* Select "Upload"
+* Click "select file"
+* Select `conf/CompanionBot.zip`
+* Click `Restore`
 
-Import this project to your new project:
+Your new agent should now be configured to build on.
 
 ## Setup Local Development
 ### Clone this repository
