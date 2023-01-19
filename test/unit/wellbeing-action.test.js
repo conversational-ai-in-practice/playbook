@@ -1,6 +1,6 @@
 import ava from 'ava'
-import IntentRequest from '../lib/intent-request.js'
-import WellbeingAction from '../lib/action/wellbeing-action.js'
+import IntentRequest from '../../lib/helper/intent.js'
+import WellbeingAction from '../../lib/action/wellbeing-action.js'
 
 ava('test', async (test) => {
   const request = new IntentRequest('WellBeing')

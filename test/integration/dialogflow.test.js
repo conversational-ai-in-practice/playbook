@@ -1,5 +1,5 @@
 import ava from 'ava'
-import DialogflowAdapter from '../lib/helper/dialogflow-adapter.js'
+import DialogflowAdapter from '../../lib/helper/dialogflow-adapter.js'
 import dotenv from 'dotenv'
 
 dotenv.config()

@@ -15,8 +15,11 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
+    "integration": "ava **/integration/**.test.js",
+    "ngrok": "ngrok http 8080",
     "server": "node bin/serve.js",
-    "test": "ava"
+    "test": "ava",
+    "unit": "ava **/unit/**.test.js"
   },
   "type": "module",
   "version": "1.0.0"
