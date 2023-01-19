@@ -1,5 +1,6 @@
-# Setup Dialogflow
-## Create a Dialogflow project
+# Setup 
+## Setup Dialogflow
+### Create a Dialogflow project
 If you have not already, create a new Dialogflow CX project:  
 https://dialogflow.cloud.google.com/cx/projects
 
@@ -7,40 +8,40 @@ This will prompt you to create a new Google Cloud project first, if you don't al
 
 Once completed, return to the Dialogflow Console and select the new project. Choose `Enable API` for Dialogflow if you have not already.
 
-## Create Agent
+### Create Agent
 * Choose "Create Agent"
 * Set the Display Name to "Companion Bot" (or something else you like :-))
 * Click "Create"
 
-## Import the agent
+### Import the agent
 * Click the "Agent Settings" on the top-right of the Dialogflow CX console
 * 
 
 Import this project to your new project:
 
-# Setup Local Development
-## Clone this repository
+## Setup Local Development
+### Clone this repository
 ```
 git clone https://github.com/conversational-ai-in-practice/playbook
 ```
 
-## Install the gcloud CLI for authentication
+### Install the gcloud CLI for authentication
 ```
 https://cloud.google.com/sdk/docs/install
 ```
 
 Follow the instructions on that page, including running `gcloud init` to setup authentication credentials to access your Dialogflow project.
 
-## Enable Programmatic Access to Dialogflow
+### Enable Programmatic Access to Dialogflow
 Run `gcloud auth application-default login` on the command-line.
 
-## Set environment variables
+### Set environment variables
 Make a copy of the `example.env` file and save it as `.env`.
 
 Set the environment variables to correspond to your Dialogflow agent, as described here:  
 https://cloud.google.com/dialogflow/cx/docs/quick/api#ids
 
-## Install ngrok
+### Install ngrok
 We use ngrok to test the code on our local machine with our Dialogflow agent.
 
 To download ngrok, go here:
@@ -66,3 +67,5 @@ To add this, do the following in the Dialogflow console:
 * For the `Webhook URL` field, enter the URL copied from the ngrok output on your CLI
 * Add `/handle` to the end of the URL - it should look like this: `https://c837-71-214-89-22.ngrok.io/handle`
 * Click `Save`
+
+**TAKE NOTE** - if you are using the free version of ngrok, the URL will change from day-to-day. So you will need to go back into the Webhook configuration and update the URL with the new value from ngrok.
